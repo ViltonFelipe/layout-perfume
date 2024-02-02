@@ -44,19 +44,19 @@ body {
 #produto {
     letter-spacing: 5px;
     text-transform: uppercase;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
 }
 
 #titulo {
-    font-family: 'fraunces', sans-serif;
+    font-family: 'Fraunces', sans-serif;
     font-weight: 700;
 }
 
 #paragrafo {
     width: 240px;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
@@ -70,12 +70,12 @@ body {
 }
 
 #preços h1 {
-    font-family: 'fraunces', sans-serif;
+    font-family: 'Fraunces', sans-serif;
     color:  hsl(158, 36%, 37%);
 }
 
 #preços p {
-    font-family:'montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
     text-decoration: line-through;
 }
 
@@ -92,7 +92,7 @@ button {
     border-radius: 10px;
     border: none;
 
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
@@ -141,19 +141,19 @@ footer {
     #produto {
         letter-spacing: 5px;
         text-transform: uppercase;
-        font-family: 'montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 14px;
     }
     
     #titulo {
-        font-family: 'fraunces', sans-serif;
+        font-family: 'Fraunces', sans-serif;
         font-weight: 700;
     }
     
     #paragrafo {
         width: 295px;
-        font-family: 'montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 500;
     }
@@ -166,12 +166,12 @@ footer {
     }
     
     #preços h1 {
-        font-family: 'fraunces', sans-serif;
+        font-family: 'Fraunces', sans-serif;
         color:  hsl(158, 36%, 37%);
     }
     
     #preços p {
-        font-family:'montserrat', sans-serif;
+        font-family:'Montserrat', sans-serif;
         text-decoration: line-through;
     }
     
@@ -189,7 +189,7 @@ footer {
         border: none;
     
         text-align: center;
-        font-family: 'montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 700;
         color: hsl(0, 0%, 100%);

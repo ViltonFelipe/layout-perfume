@@ -4,41 +4,38 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    height: 100vh;
-    
-    margin: 0;
-
+      
     background: hsl(30, 38%, 92%);
 }
 
 #container {
+    display: flex;
+
     width: 600px;
     
     border-radius: 10px;
 
-    display: flex;
-    align-items: center;
     background: hsl(0, 0%, 100%);
 }
 
 #imagem-perfume {
     width: 300px;
+
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 #conteudo {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    padding: 0 30px;
+    padding: 30px;
 }
 
 #produto {
@@ -57,8 +54,9 @@ body {
 }
 
 #paragrafo {
-    color: hsl(228, 12%, 48%);
     width: 240px;
+
+    color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -85,7 +83,9 @@ body {
 
 button {
     padding: 0px 65px;
-    
+    border-radius: 10px;
+    border: none;
+
     width: 240px;
     height: 50px;
     
@@ -93,14 +93,12 @@ button {
     align-items: center;
     justify-content: space-between;
 
-    border-radius: 10px;
-    border: none;
 
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(158, 36%, 37%);
 }
 
 button:hover {
@@ -112,42 +110,39 @@ footer {
 }
 
 @media (max-width: 700px) {
-    body {
-        
-        padding: 30px;
-    
+    body {    
         background: hsl(30, 38%, 92%);
     }
     #container {
         width: 350px;
-        
+
+        display: block;
+
         border-radius: 10px;
-        display: inline;
         background: hsl(0, 0%, 100%);
     }
     
     #imagem-perfume {
+        width: 350px;
+
         content: url(./images/image-product-mobile.jpg);
+
         border-top-left-radius: 10px;
         border-bottom-left-radius: 0px;
         border-top-right-radius: 10px;
-        width: 350px;
     }
     
     #conteudo {
-        padding: 20px;
-
-        display: block;
-        align-items: center;
-        justify-content: center;
+        padding: 30px;
     }
     
     #produto {
-        letter-spacing: 5px;
-        text-transform: uppercase;
+        color: hsl(228, 12%, 48%);
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 14px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
     }
     
     #titulo {
@@ -157,6 +152,8 @@ footer {
     
     #paragrafo {
         width: 295px;
+
+        color: hsl(228, 12%, 48%);
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 500;
@@ -164,14 +161,15 @@ footer {
     
     #preços {
         width: 200px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     
     #preços h1 {
-        font-family: 'Fraunces', sans-serif;
         color:  hsl(158, 36%, 37%);
+        font-family: 'Fraunces', sans-serif;
     }
     
     #preços p {
@@ -180,9 +178,9 @@ footer {
     }
     
     button {
-        padding: 0px 100px;
+        padding: 0px 90px;
         
-        width: 310px;
+        width: 290px;
         height: 50px;
         
         display: flex;
@@ -191,13 +189,13 @@ footer {
     
         border-radius: 10px;
         border: none;
-    
+
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 700;
-        color: hsl(0, 0%, 100%);
-        background-color: hsl(158, 36%, 37%);
     }
     
     button:hover {

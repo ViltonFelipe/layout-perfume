@@ -7,7 +7,13 @@
     box-sizing: border-box;
 }
 
+body * {
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font: normal 14px 'montserrat';
     height: 100vh;
 
     display: flex;
@@ -19,12 +25,14 @@ body {
 
 #container {
     display: flex;
-
-    width: 600px;
     
     border-radius: 10px;
 
     background: hsl(0, 0%, 100%);
+}
+
+#conteudo {
+    width: 300px;
 }
 
 #imagem-perfume {
@@ -34,27 +42,30 @@ body {
     border-bottom-left-radius: 10px;
 }
 
-#conteudo {
-    padding: 30px;
-}
-
 #produto {
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 10px;
+
     color: hsl(228, 12%, 48%);
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #titulo {
+    margin: 0;
+    padding: 10px 60px 10px 30px;
     color: hsl(212, 21%, 14%);
+    font-size: 32px;
     font-family: 'Fraunces', sans-serif;
     font-weight: 700;
 }
 
 #paragrafo {
-    width: 240px;
+    padding: 10px 30px;
 
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
@@ -64,25 +75,33 @@ body {
 }
 
 #preços {
-    width:200px;
+    padding: 10px 75px 10px 30px;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 #preços h1 {
+    margin: 0;
+    font-size: 32px;
     font-family: 'Fraunces', sans-serif;
     color:  hsl(158, 36%, 37%);
 }
 
 #preços p {
-    color: hsl(212, 21%, 14%);
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
     font-family:'Montserrat', sans-serif;
     text-decoration: line-through;
 }
 
+#botao {
+    padding: 15px 30px;
+}
+
 button {
-    padding: 0px 65px;
+    padding: 10px 65px;
     border-radius: 10px;
     border: none;
 
@@ -110,6 +129,17 @@ footer {
 }
 
 @media (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body * {
+        margin: 0;
+        padding: 0;
+    }
+
     body {    
         background: hsl(30, 38%, 92%);
     }
@@ -131,27 +161,36 @@ footer {
         border-bottom-left-radius: 0px;
         border-top-right-radius: 10px;
     }
-    
+
     #conteudo {
-        padding: 30px;
+        margin: 0;
+        width: 350px;
     }
     
     #produto {
+        margin: 0;
+        padding: 20px 20px 5px 25px;
         color: hsl(228, 12%, 48%);
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 5px;
         text-transform: uppercase;
     }
     
     #titulo {
+        margin: 0;
+        padding: 5px 20px 10px 25px;
+        line-height: 33px;
+
+        font-size: 32px;
         font-family: 'Fraunces', sans-serif;
         font-weight: 700;
     }
     
     #paragrafo {
-        width: 295px;
+        margin: 0;
+        padding: 5px 30px 10px 25px;
 
         color: hsl(228, 12%, 48%);
         font-family: 'Montserrat', sans-serif;
@@ -160,7 +199,8 @@ footer {
     }
     
     #preços {
-        width: 200px;
+        margin: auto;
+        padding: 10px 125px 10px 25px;
 
         display: flex;
         align-items: center;
@@ -168,19 +208,27 @@ footer {
     }
     
     #preços h1 {
+        margin: 0;
         color:  hsl(158, 36%, 37%);
+
+        font-size: 32px;
         font-family: 'Fraunces', sans-serif;
     }
     
     #preços p {
+        color: hsl(228, 12%, 48%);
         font-family:'Montserrat', sans-serif;
         text-decoration: line-through;
+    }
+
+    #botao {
+        padding: 5px 20px 25px 25px;
     }
     
     button {
         padding: 0px 90px;
         
-        width: 290px;
+        width: 300px;
         height: 50px;
         
         display: flex;
